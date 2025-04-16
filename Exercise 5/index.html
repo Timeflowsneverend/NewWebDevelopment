@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;4000;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;4000;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        :root {
+            --left-color: rgb(114, 63, 63);
+            --right-color: rgb(53, 53, 112);
+
+        }
+
+        /* Dark Mode */
+        :root {
+            --nav-color: black;
+            --text-color: white;
+            --main-color: rgb(24, 24, 24);
+            --footer-color: black;
+            --border: white;
+        }
+
+        /* Light Mode  */
+        :root {
+            --nav-color: rgb(221, 221, 221);
+            --text-color: black;
+            --main-color: whitesmoke;
+            --footer-color: rgb(214, 214, 214);
+            --border: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+
+            background-color: var(--main-color);
+            color: var(--text-color);
+        }
+
+        main {
+            height: 100vh;
+        }
+
+        nav {
+            background-color: var(--nav-color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            padding: 20px;
+            list-style: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .main {
+            background-color: green;
+            display: flex;
+            padding: 30px;
+            margin: 15px;
+
+        }
+
+        .left {
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background-color: var(--left-color);
+        }
+
+        .right {
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            background-color: var(--right-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: var(--footer-color);
+            color: var(--text-color);
+        }
+
+        .text {
+            text-align: center;
+            margin: 10px auto;
+            padding: 30px;
+            border: 2px solid var(--border);
+            border-radius: 25px;
+            width: 700PX;
+
+        }
+
+        .text h2 {
+            margin: 0 110px
+        }
+
+        .icon {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .icon img {
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="text">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sapiente?</h2>
+        </div>
+        <div class="icon"><a href="/"><img
+                    src="https://imgs.search.brave.com/xF9VF73xT65Wic2V6Jp74V7RPsLGxqGSijUNEEdgcZo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8zMTM1LzMxMzU3/MTUucG5nP3NlbXQ9/YWlzX2h5YnJpZA"
+                    alt="icon"></a></div>
+    </main>
+    <footer>
+        <div class="footer">Footer</div>
+    </footer>
+</body>
+
+</html>
