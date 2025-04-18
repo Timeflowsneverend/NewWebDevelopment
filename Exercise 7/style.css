@@ -35,6 +35,10 @@ header {
     min-height: 96px;
 }
 
+#first{
+    scroll-margin-top: 96px;
+}
+
 nav {
     margin: 5vw;
     width: 100%;
@@ -62,7 +66,7 @@ nav path {
 }
 
 .search svg:hover,
-.item button {
+.item button, .icon:hover {
     cursor: pointer;
 }
 
@@ -72,7 +76,7 @@ body {
 
 main {
     padding-top: 90px;
-    margin: 0 10vw;
+    margin: 0 auto;
     max-width: 1200px;
 }
 
@@ -82,7 +86,7 @@ main {
 }
 
 
-ul {
+nav ul {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -90,14 +94,14 @@ ul {
 
 }
 
-ul li {
+nav ul li {
     display: flex;
     list-style: none;
     align-items: center;
     justify-items: center;
 }
 
-li a {
+nav ul li a {
     text-decoration: none;
     color: var(--theme-text-color);
 }
@@ -139,16 +143,26 @@ li a {
 }
 
 footer {
-    display: grid;
-    padding: 20px;
-    grid-template-columns: 1fr 1fr;
     color: var(--footer-txt-color);
     background-color: var(--footer-bg-color);
+    padding: 10px;
+    text-align: center;
 }
 
-footer ul{
-    display: flex;
-    flex-direction: column;
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 50vw;
+}
+
+.footer-item{
+    height: 100px;
+    text-align: center;
+}
+
+.footer-item ul{
+    list-style: none;
 }
 
 .icon{
@@ -157,15 +171,10 @@ footer ul{
     bottom: 15px;
     background-color: white;
     border-radius: 53px;
-    height: 95px;
-    width: 95px;
+    height: 55px;
+    width: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px black;
 }
-
-/* #icon path{
-    fill: var(--chat-fill);
-    color: var(--chat-color);
-} */

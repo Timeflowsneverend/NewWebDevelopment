@@ -13,7 +13,9 @@
             box-sizing: border-box;
         }
 
-
+        body {
+            background-color: white;
+        }
 
         header {
             display: flex;
@@ -24,12 +26,8 @@
             max-width: 1200px;
         }
 
-        body{
-            background-color: black;
-        }
-
         .img img {
-            max-width:100%;
+            max-width: 100%;
             height: auto;
         }
 
@@ -47,9 +45,9 @@
         ul {
             display: flex;
             gap: 20px;
-            
+
         }
-        
+
         ul li {
             display: flex;
             list-style: none;
@@ -60,13 +58,6 @@
             text-decoration: none;
             color: black;
         }
-
-        /* .search, .menu {
-            padding: 2px;
-        }
-        span{
-            margin: 5px;
-        } */
     </style>
 </head>
 
@@ -74,12 +65,9 @@
     <header>
         <nav>
             <div class="img">
-                <img fetchpriority="high" src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" width="259" height="83" alt="UltraEdit" id="logo" data-height-percentage="58" data-actual-width="259" data-actual-height="83">
-
-
-                <!-- <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
-                    alt="UltraEdit"> -->
-                </div>
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                    alt="UltraEdit">
+            </div>
             <ul>
                 <li><span><a href="https://www.ultraedit.com/#">Products</a></span><svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" color="#000000"
@@ -116,17 +104,32 @@
                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </li>
-                <li><span><a href="https://www.ultraedit.com/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                    <path d="M19.5576 4L20.4551 4.97574C20.8561 5.41165 21.0566 5.62961 20.9861 5.81481C20.9155 6 20.632 6 20.0649 6C18.7956 6 17.2771 5.79493 16.1111 6.4733C15.3903 6.89272 14.8883 7.62517 14.0392 9M3 18H4.58082C6.50873 18 7.47269 18 8.2862 17.5267C9.00708 17.1073 9.50904 16.3748 10.3582 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M19.5576 20L20.4551 19.0243C20.8561 18.5883 21.0566 18.3704 20.9861 18.1852C20.9155 18 20.632 18 20.0649 18C18.7956 18 17.2771 18.2051 16.1111 17.5267C15.2976 17.0534 14.7629 16.1815 13.6935 14.4376L10.7038 9.5624C9.63441 7.81853 9.0997 6.9466 8.2862 6.4733C7.47269 6 6.50873 6 4.58082 6H3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></a>
+                <li><span><a href="https://www.ultraedit.com/"><svg xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                                <path
+                                    d="M19.5576 4L20.4551 4.97574C20.8561 5.41165 21.0566 5.62961 20.9861 5.81481C20.9155 6 20.632 6 20.0649 6C18.7956 6 17.2771 5.79493 16.1111 6.4733C15.3903 6.89272 14.8883 7.62517 14.0392 9M3 18H4.58082C6.50873 18 7.47269 18 8.2862 17.5267C9.00708 17.1073 9.50904 16.3748 10.3582 15"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M19.5576 20L20.4551 19.0243C20.8561 18.5883 21.0566 18.3704 20.9861 18.1852C20.9155 18 20.632 18 20.0649 18C18.7956 18 17.2771 18.2051 16.1111 17.5267C15.2976 17.0534 14.7629 16.1815 13.6935 14.4376L10.7038 9.5624C9.63441 7.81853 9.0997 6.9466 8.2862 6.4733C7.47269 6 6.50873 6 4.58082 6H3"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
                 </li>
                 <div>
-                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                        <path d="M16.5 17.5L20 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M18 13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13C6 16.3137 8.68629 19 12 19C15.3137 19 18 16.3137 18 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M19.7654 9C20.2554 8.79701 20.6448 8.40766 20.8478 7.91761C21 7.55007 21 6.93188 21 6C21 5.06812 21 4.60218 20.8478 4.23463C20.6448 3.74458 20.2554 3.35523 19.7654 3.15224C19.3978 3 18.9319 3 18 3H6C5.06812 3 4.60218 3 4.23463 3.15224C3.74458 3.35523 3.35523 3.74458 3.15224 4.23463C3 4.60218 3 5.06812 3 6C3 6.93188 3 7.55007 3.15224 7.91761C3.35523 8.40766 3.74458 8.79701 4.23463 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></span>
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M16.5 17.5L20 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M18 13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13C6 16.3137 8.68629 19 12 19C15.3137 19 18 16.3137 18 13Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19.7654 9C20.2554 8.79701 20.6448 8.40766 20.8478 7.91761C21 7.55007 21 6.93188 21 6C21 5.06812 21 4.60218 20.8478 4.23463C20.6448 3.74458 20.2554 3.35523 19.7654 3.15224C19.3978 3 18.9319 3 18 3H6C5.06812 3 4.60218 3 4.23463 3.15224C3.74458 3.35523 3.35523 3.74458 3.15224 4.23463C3 4.60218 3 5.06812 3 6C3 6.93188 3 7.55007 3.15224 7.91761C3.35523 8.40766 3.74458 8.79701 4.23463 9"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></span>
                     <span>Menu</span>
                 </div>
             </ul>
