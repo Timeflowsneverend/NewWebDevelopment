@@ -12,12 +12,23 @@
     position:absolute;
     width: 100%;
 } */
+
+header {
+    height: 90px;
+}
+
+nav {
+    height: 100%;
+    margin:0 auto;
+    width: 90%;
+    
+}
+
 .nav-bar{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 23px;
-    margin: 0 1vw;
 }
 
 .logo img{
@@ -28,7 +39,7 @@
     font-weight: 500;
     font-size: 14px;
     width: 75px;
-    height: 30px;
+    height: 35px;
 }
 
 .btn{
@@ -45,9 +56,9 @@
 }
 
 .hero{
-    border: 1px solid red; 
-    height: 478px;
-    width: 96%;
+    /* border: 1px solid red;  */
+    height: 566px;
+    width: 95%;
     margin: 0 auto;
     border-radius: 17px;
     justify-content: center;
@@ -56,13 +67,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(image/bg.jpg);
-    padding-bottom: 88px;
+    /* padding-bottom: 88px;
     padding-left: 80px;
-    padding-right: 80px;
+    padding-right: 80px; */
+    box-shadow: 0 0 500px #b3296b;
 }
 
 body{
-background-color: black;
+    background-color: black;
+}
+.filter{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 /* 
 .hero-text{
@@ -94,10 +111,6 @@ background-color: black;
     font-weight: 500;
 }
 
-.filter{
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
 .grid{
     width: 100%;
